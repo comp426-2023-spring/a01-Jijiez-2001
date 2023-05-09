@@ -1,11 +1,11 @@
 // Require http module
-var http = require('http');
+const http = require('http');
 
 // Require fs module
-var fs = require('fs');
+const fs = require('fs');
 
 // Require minimist module (make sure you install this one via npm).
-var min = require('minimist');
+const min = require('minimist');
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 const args = min(process.argv.slice(2));
@@ -13,7 +13,6 @@ const args = min(process.argv.slice(2));
 // Define a const `port` using the argument from the command line. 
 // Make this const default to port 3000 if there is no argument given for `--port`.
 const port = args['port'] || 3000;
-
 // Use the fs module to create an arrow function using `fs.readFile`.
 // Use the documentation for the Node.js `fs` module. 
 // The function must read a file located at `./public/index.html` and do some stuff with it.
@@ -24,13 +23,12 @@ const port = args['port'] || 3000;
 
 const readIndHtml=()=> {
 fs.readFile('./public/index.html',(error, info) =>{
-  if (error){
-    console.error(error);
-    process.exit(1);
-  }
-  console.log(info.toString());
+if (error){
+console.error(error);
+process.exit(1);
 }
-);
+console.log(info.toString());
+});
 };
 
 
@@ -62,8 +60,7 @@ const server = http.createServer((request, response) => {
 
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`);
-   });
+});
    
-  
 
 // That's it! You're all done!
