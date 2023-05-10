@@ -1,14 +1,14 @@
 {
   "name": "jijiez-webserver",
-  "version": "1.0.0",
-  "description": "This package contains a very simple web server that takes one argument for port and then serves any files inside the public directory.",
+  "version": "0.0.1",
+  "description": "This package contains a very simple web server",
   "main": "server.js",
   "scripts": {
     "test": "node server.js --port=5555"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comp426-2023-spring/a01-Jijiez.git"
+    "url": "git+https://github.com/comp426-2023-spring/a01-Jijiez-2001.git"
   },
   "keywords": [
     "web",
@@ -19,12 +19,12 @@
     "args",
     "http"
   ],
-  "author": "jijiez",
+  "author": "Jijiez-2001",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/comp426-2023-spring/a01-Jijiez/issues"
+    "url": "https://github.com/comp426-2023-spring/a01-Jijiez-2001/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a01-Jijiez#readme",
+  "homepage": "https://github.com/comp426-2023-spring/a01-Jijiez-2001#readme",
   "dependencies": {
     "minimist": "^1.2.8"
   }
