@@ -1,10 +1,11 @@
 {
-  "name": "jijiez-webserver",
+  "name": "my-private-web-server",
   "version": "0.0.1",
   "description": "This package contains a very simple web server",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js --port=5555"
+    "test": "node server.js --port=5555",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
